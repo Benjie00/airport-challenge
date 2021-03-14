@@ -1,0 +1,11 @@
+{
+  "name": "airport-challenge",
+  "version": "1.0.0",
+  "description": "A TDD Challenge for Digital Futures",
+  "main": "index.js",
+  "scripts": {
+    "test": "node specRunner.js"
+  },
+  "author": "dearshrewdwit",
+  "license": "ISC"
+}
