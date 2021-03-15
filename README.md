@@ -30,7 +30,7 @@ Steps
 
 1. Fork this repo, and clone to your local machine
 2. `npm install` to install project dependencies
-3. Complete the following task:
+3. Convert stories into a representative domain model and test-drive your work.
 4. Run your tests using `npm test` or `node specRunner.js`
 5. [Lint](https://eslint.org/docs/user-guide/getting-started) your source code using `npx eslint src`
 
@@ -64,7 +64,6 @@ I want to prevent asking the airport to let planes take-off which are not at the
 
 #### Extended Acceptance Criteria
 ```
-####
 As an air traffic controller
 To ensure safety
 I want to prevent takeoff when weather is stormy
