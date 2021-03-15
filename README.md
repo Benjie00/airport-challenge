@@ -21,7 +21,7 @@ Instructions
 * If you refer to the solution of another coach or student, please put a link to that in your README
 * If you have a partial solution, **still check in a partial solution**
 * You must submit a pull request to this repo with your code by 9am Monday morning
-* Use your own test framework and evidence your test-driven development
+* Use your own test framework and evidence your test-driven development by committing on passing tests.
 * Please write your own README detailing how to install your project, how to run the tests, how you approached the problem and provide screenshots of interacting with your program.
 * Please create separate files for every class, module and test suite.
 
@@ -31,6 +31,8 @@ Steps
 1. Fork this repo, and clone to your local machine
 2. `npm install` to install project dependencies
 3. Complete the following task:
+4. Run your tests using `npm test` or `node specRunner.js`
+5. [Lint](https://eslint.org/docs/user-guide/getting-started) your source code using `npx eslint src`
 
 Task
 -----
