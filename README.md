@@ -18,11 +18,10 @@ Instructions
 
 * Feel free to use google, your notes, books, etc. but work on your own.
 * Keep it SIMPLE - it's not nearly as complicated as it first may look.
-* If you refer to the solution of another coach or student, please put a link to that in your README
-* If you have a partial solution, **still check in a partial solution**
-* You must [submit your challenge](https://airtable.com/shrUGm2T8TYCFAmjN) by 9am Monday morning
+* You must [submit your challenge](https://airtable.com/shrUGm2T8TYCFAmjN) by 9am Monday morning, wherever you get to.
 * Use your own test framework and evidence your test-driven development by committing on passing tests.
 * Please write your own README detailing how to install your project, how to run the tests, how you approached the problem and provide screenshots of interacting with your program.
+* If you refer to the solution of another coach or student, please put a link to that in your README.
 * Please create separate files for every class, module, and spec.
 
 Steps
