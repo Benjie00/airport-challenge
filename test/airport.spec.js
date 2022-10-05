@@ -51,3 +51,28 @@ plane = null;
 expected = undefined;
 actual = undefined;
 result = undefined;
+
+///////////////////////////////////////////
+
+//Test 2a - Does the airport have a default capcity?
+console.log('===============')
+console.log('Test 2a: check the value of airport.capacity to see if the default is size is 3.')
+
+//arrange
+airport = new Airport();
+plane = new Plane();
+expected = 3;
+
+//act
+actual = airport.capacity;
+
+//assert
+result = assertEquals(actual, expected);
+console.log(`Does the airport have a default capcity of 3: ${result}`);
+
+// Clean up
+airport = null;
+plane = null;
+expected = undefined;
+actual = undefined;
+result = undefined;

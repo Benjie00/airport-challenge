@@ -1,10 +1,11 @@
 class Airport {
-  // here's a starting point for you
+
   planesInAiport;
+  capacity
 
-
-  constructor(planesInAiport) {
+  constructor(planesInAiport, capacity = 3) {
     this.planesInAiport = [planesInAiport];
+    this.capacity = capacity;
   }
 
   landPlane(plane) {
