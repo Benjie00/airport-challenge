@@ -27,3 +27,27 @@ expected = undefined;
 actual = undefined;
 result = undefined;
 
+///////////////////////////////////////////
+
+//Test 1b - Does the plane land at airport?
+console.log('===============')
+console.log('Test 1b: if landPlane() is called, the length of planesInAirport[] array increases.')
+
+//arrange
+airport = new Airport();
+plane = new Plane();
+expected = 1;
+
+//act
+actual = airport.planesInAiport.length;
+
+//assert
+result = assertEquals(actual, expected);
+console.log(`The plane has landed and is stored in the aiport: ${result}`);
+
+// Clean up
+airport = null;
+plane = null;
+expected = undefined;
+actual = undefined;
+result = undefined;
