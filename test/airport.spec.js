@@ -188,3 +188,29 @@ actual = undefined;
 result = undefined;
 
 ///////////////////////////////////////////
+
+//Test 4b: when the plane takes off is a string returned?
+console.log('===============')
+console.log('Test 4: a string will be returned to confirm the plane has taken off.')
+
+//arrange
+airport = new Airport();
+plane = new Plane();
+expected = 'The plane has taken off';
+
+//act
+airport.landPlane(plane);
+actual = airport.takeOff(plane);
+
+//assert
+result = assertEquals(actual, expected);
+console.log(`A string is returned to confirm take off: ${result}`)
+
+// Clean up 
+airport = null;
+plane = null;
+expected = undefined;
+actual = undefined;
+result = undefined;
+
+///////////////////////////////////////////
