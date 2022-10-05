@@ -134,3 +134,31 @@ result = undefined;
 
 ///////////////////////////////////////////
 
+//Test 3b - When the airport is full, is a string returned to alert that the airport is full?
+console.log('===============')
+console.log('Test 3b: a string is returned to note the airport is full')
+
+//arrange
+airport = new Airport();
+plane = new Plane();
+expected = 'Airport is full, no more planes can land';
+
+//act
+airport.landPlane(plane);
+airport.landPlane(plane);
+airport.landPlane(plane);
+actual = airport.landPlane(plane)
+
+//assert
+result = assertEquals(actual, expected);
+console.log(`When the airport is full, a string is returned when a plane tries to land: ${result}`);
+
+// Clean up 
+airport = null;
+plane = null;
+expected = undefined;
+actual = undefined;
+result = undefined;
+
+///////////////////////////////////////////
+
