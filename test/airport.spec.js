@@ -39,6 +39,7 @@ plane = new Plane();
 expected = 1;
 
 //act
+airport.landPlane(plane)
 actual = airport.planesInAiport.length;
 
 //assert
@@ -102,3 +103,34 @@ plane = null;
 expected = undefined;
 actual = undefined;
 result = undefined;
+
+//Test 3a - When the airport is full, are planes stopped from landing at the airport?
+console.log('===============')
+console.log('Test 3a, if the planesInAirport[] is at max capacity, when the landPlane(plane) method is called, the length of the array should not increase.')
+
+//arrange
+airport = new Airport();
+plane = new Plane();
+expected = 3;
+
+//act
+airport.landPlane(plane);
+airport.landPlane(plane);
+airport.landPlane(plane);
+airport.landPlane(plane);
+airport.landPlane(plane);
+actual = airport.planesInAiport.length
+
+//assert
+result = assertEquals(actual, expected);
+console.log(`When the airport is full, planes cannot land: ${result}`);
+
+// Clean up 
+airport = null;
+plane = null;
+expected = undefined;
+actual = undefined;
+result = undefined;
+
+///////////////////////////////////////////
+
