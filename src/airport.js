@@ -21,6 +21,11 @@ class Airport {
   changeCapacity(capacity) {
     return this.capacity = capacity;
   }
+
+  takeOff(plane) {
+    let indexOf = this.planesInAiport.indexOf(plane)
+    this.planesInAiport.splice(indexOf, 1)
+  }
 }
 
 module.exports = Airport;

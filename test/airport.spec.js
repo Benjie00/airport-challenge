@@ -162,3 +162,29 @@ result = undefined;
 
 ///////////////////////////////////////////
 
+//Test 4a - Testing if the length of the planesInAirport Array decreases once a plane has taken off?
+console.log('===============')
+console.log('Test 4a: if the takeOff(plane) method is called, the length of the planesInAirport[] array will decrease by 1.')
+
+//arrange
+airport = new Airport();
+plane = new Plane();
+expected = 0;
+
+//act
+airport.landPlane(plane);
+airport.takeOff(plane);
+actual = airport.planesInAiport.length;
+
+//assert
+result = assertEquals(actual, expected);
+console.log(`1 plane is stored at the airport, when it leaves 0 planes are at the aiport: ${result}`)
+
+// Clean up 
+airport = null;
+plane = null;
+expected = undefined;
+actual = undefined;
+result = undefined;
+
+///////////////////////////////////////////

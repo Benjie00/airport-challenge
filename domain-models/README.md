@@ -48,10 +48,12 @@ I want to instruct the airport to let a plane take off and confirm that it is no
 
 | **OBJECTS** | **PROPERTIES**               | **MESSAGES**     | **OUTPUTS** |
 | ----------- | ---------------------------- | ---------------- | ----------- |
-| airport     | planesInAirport@array[plane] | @takeOff[@plane] | @bool       |
+| airport     | planesInAirport@array[plane] | @takeOff[@plane] | @string     |
 | plane       | id@string                    | -                | -           |
 
-
+- Test 4a, if 1 plane is stored at the airport and the `takeOff(plane)` method is called, the length of the `planesInAirport[]` array will decrease by 1. 
+- Test 4b, a string will be returned to confirm the plane has taken off.
+- Test 4c, the plane `id` will not be included in the `planesAtAirport[]` array.
 
 ## User story 5: 
 As an air traffic controller
