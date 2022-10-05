@@ -12,6 +12,10 @@ class Airport {
     this.planesInAiport.push(plane);
     return "Land plane"
   }
+
+  changeCapacity(capacity) {
+    return this.capacity = capacity;
+  }
 }
 
 module.exports = Airport;

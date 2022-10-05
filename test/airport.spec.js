@@ -76,3 +76,29 @@ plane = null;
 expected = undefined;
 actual = undefined;
 result = undefined;
+
+///////////////////////////////////////////
+
+//Test 2b - Does changeCapcity method revise the capcity?
+console.log('===============')
+console.log('Test 2b: call the changeCapacity() method and check if the capcity has changed.')
+
+//arrange
+airport = new Airport();
+plane = new Plane();
+expected = 5;
+
+//act
+airport.changeCapacity(5);
+actual = airport.capacity;
+
+//assert
+result = assertEquals(actual, expected);
+console.log(`Does calling the changeCapacity() method revise the capcity: ${result}`);
+
+// Clean up
+airport = null
+plane = null;
+expected = undefined;
+actual = undefined;
+result = undefined;
