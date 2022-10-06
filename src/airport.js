@@ -13,7 +13,7 @@ class Airport {
       return 'Airport is full, no more planes can land';
     }
     if (this.isPlaneInAirport(plane)) {
-      return;
+      return 'The plane is already in airport, it cannot land again';
     }
     this.planesInAiport.push(plane);
     return "Land plane"

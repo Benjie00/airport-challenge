@@ -398,3 +398,28 @@ result = undefined;
 
 ///////////////////////////////////////////
 
+//Test 5g: is a string returned when a plane tries to land that is already at the airport?
+console.log('===============')
+console.log('Test 5g: a string will be returned to state a plane already in the airport cannot land again')
+
+//arrange
+airport = new Airport();
+plane = new Plane();
+expected = 'The plane is already in airport, it cannot land again';
+
+//act
+airport.landPlane(plane)
+actual = airport.landPlane(plane)
+
+//assert
+result = assertEquals(actual, expected);
+console.log(`A string was returned when the plane to land was already at the airport: ${result}`)
+
+// Clean up 
+airport = null;
+plane = null;
+expected = undefined;
+actual = undefined;
+result = undefined;
+
+///////////////////////////////////////////
