@@ -319,5 +319,30 @@ result = undefined;
 
 ///////////////////////////////////////////
 
+//Test 5ed: does the isPlaneAtAirport() method detect a plane that is not in the aiport?
+console.log('===============')
+console.log('Test 5e, if the landPlane() method has been called on a plane already in planesInAirport[] array, the length of the array should not increase.')
 
+//arrange
+airport = new Airport();
+plane = new Plane();
+expected = 1;
+
+//act
+airport.landPlane(plane)
+airport.landPlane(plane)
+actual = airport.planesInAiport.length
+
+//assert
+result = assertEquals(actual, expected);
+console.log(`The number of planes at the aiport did not increase: ${result}`)
+
+// Clean up 
+airport = null;
+plane = null;
+expected = undefined;
+actual = undefined;
+result = undefined;
+
+///////////////////////////////////////////
 
