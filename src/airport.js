@@ -9,10 +9,7 @@ class Airport {
   }
 
   landPlane(plane) {
-    if (this.isPlaneInAirport(plane)) {
-      return;
-    }
-    if (this.planesInAiport.length === this.capacity) {
+    if (this.isFull()) {
       return 'Airport is full, no more planes can land';
     }
     this.planesInAiport.push(plane);

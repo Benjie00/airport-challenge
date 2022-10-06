@@ -166,15 +166,12 @@ console.log('Test 3c, if the planesInAirport[] is at max capacity, when the land
 //arrange
 airport = new Airport();
 plane = new Plane();
-expected = 3;
+expected = airport.capacity;
 
 //act
+airport.planesInAiport.length = airport.capacity;
 airport.landPlane(plane);
-airport.landPlane(plane);
-airport.landPlane(plane);
-airport.landPlane(plane);
-airport.landPlane(plane);
-actual = airport.planesInAiport.length
+actual = airport.planesInAiport.length;
 
 //assert
 result = assertEquals(actual, expected);
