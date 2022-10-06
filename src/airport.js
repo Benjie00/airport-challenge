@@ -23,7 +23,7 @@ class Airport {
 
   takeOff(plane) {
     if (!this.isPlaneInAirport(plane)) {
-      return;
+      return 'Cannot take off because plane is not at the aiport';
     }
     let indexOf = this.planesInAiport.indexOf(plane);
     this.planesInAiport.splice(indexOf, 1);

@@ -268,3 +268,29 @@ actual = undefined;
 result = undefined;
 
 ///////////////////////////////////////////
+
+//Test 5c: a string to alert the user that the plane cannot take off if it is not in the airport?
+console.log('===============')
+console.log('Test 5c: a string should be returned to inform the user that the plane cannot takeoff if it is not in the airport when the takeOff() method is called.')
+
+//arrange
+airport = new Airport();
+plane = new Plane();
+expected = 'Cannot take off because plane is not at the aiport';
+
+//act
+actual = airport.takeOff(plane)
+
+//assert
+result = assertEquals(actual, expected);
+console.log(`A string is returned when a plane not in the airport tries to take off: ${result}`)
+
+// Clean up 
+airport = null;
+plane = null;
+expected = undefined;
+actual = undefined;
+result = undefined;
+
+///////////////////////////////////////////
+
