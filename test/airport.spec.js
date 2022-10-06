@@ -132,6 +132,33 @@ result = undefined;
 
 ///////////////////////////////////////////
 
+
+//Test 3b - does the ifFull() method return false when the airport is not full.
+console.log('===============')
+console.log('Test 3b: the isFull() method returns false if the airport is notat max capacity.')
+
+//arrange
+airport = new Airport();
+plane = new Plane();
+expected = false;
+
+//act
+airport.planesInAiport.length = 0;
+actual = airport.isFull();
+
+//assert
+result = assertEquals(actual, expected);
+console.log(`The airport is not full: ${result}`);
+
+// Clean up 
+airport = null;
+plane = null;
+expected = undefined;
+actual = undefined;
+result = undefined;
+
+///////////////////////////////////////////
+
 //Test 3c - When the airport is full, are planes stopped from landing at the airport?
 console.log('===============')
 console.log('Test 3c, if the planesInAirport[] is at max capacity, when the landPlane(plane) method is called, the length of the array should not increase.')

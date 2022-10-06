@@ -43,6 +43,7 @@ class Airport {
     if (this.planesInAiport.length >= this.capacity) {
       return true;
     }
+    return false;
   }
 }
 
