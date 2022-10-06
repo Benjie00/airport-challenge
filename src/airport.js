@@ -38,6 +38,12 @@ class Airport {
     }
     return false;
   }
+
+  isFull() {
+    if (this.planesInAiport.length >= this.capacity) {
+      return true;
+    }
+  }
 }
 
 module.exports = Airport;

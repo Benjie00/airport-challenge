@@ -104,9 +104,37 @@ expected = undefined;
 actual = undefined;
 result = undefined;
 
-//Test 3a - When the airport is full, are planes stopped from landing at the airport?
+///////////////////////////////////////////
+
+//Test 3a - does the ifFull() method return true when the airport is full.
 console.log('===============')
-console.log('Test 3a, if the planesInAirport[] is at max capacity, when the landPlane(plane) method is called, the length of the array should not increase.')
+console.log('Test 3a: the isFull() method returns true if the airport is at max capacity.')
+
+//arrange
+airport = new Airport();
+plane = new Plane();
+expected = true;
+
+//act
+airport.planesInAiport.length = 4;
+actual = airport.isFull();
+
+//assert
+result = assertEquals(actual, expected);
+console.log(`The airport is full: ${result}`);
+
+// Clean up 
+airport = null;
+plane = null;
+expected = undefined;
+actual = undefined;
+result = undefined;
+
+///////////////////////////////////////////
+
+//Test 3c - When the airport is full, are planes stopped from landing at the airport?
+console.log('===============')
+console.log('Test 3c, if the planesInAirport[] is at max capacity, when the landPlane(plane) method is called, the length of the array should not increase.')
 
 //arrange
 airport = new Airport();
@@ -134,9 +162,9 @@ result = undefined;
 
 ///////////////////////////////////////////
 
-//Test 3b - When the airport is full, is a string returned to alert that the airport is full?
+//Test 3d - When the airport is full, is a string returned to alert that the airport is full?
 console.log('===============')
-console.log('Test 3b: a string is returned to note the airport is full')
+console.log('Test 3d: a string is returned to note the airport is full')
 
 //arrange
 airport = new Airport();
@@ -319,7 +347,7 @@ result = undefined;
 
 ///////////////////////////////////////////
 
-//Test 5ed: does the isPlaneAtAirport() method detect a plane that is not in the aiport?
+//Test 5e: does the array length increase if a plane already in the aiport tries to land?
 console.log('===============')
 console.log('Test 5e, if the landPlane() method has been called on a plane already in planesInAirport[] array, the length of the array should not increase.')
 

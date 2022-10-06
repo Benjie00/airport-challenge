@@ -36,10 +36,13 @@ I want to prevent landing when the airport is full
 | ----------- | --------------------------- | ----------------- | ----------- |
 | airport     | capacity@number = 3         | -                 | -           |
 | airport     | planesIAirport@array[plane] | landPlane(@plane) | @string     |
+| airport     | -                           | isFull()          | @bool       |
 | plane       | id@string                   | -                 | -           |
 
-- Test 3a, if the `planesInAirport[]` is at max capacity, when the `landPlane(plane)` method is called, the length of the array should not increase.
-- Test 3b, a string is returned to note the airport is full.
+- Test 3a, the `isFull()` method returns true if the aiport is at max capacity.
+- Test 3b, the `isFull()` method returns false if the airport is not at max capacity.
+- Test 3c, if the `planesInAirport[]` is at max capacity, when the `landPlane(plane)` method is called, the length of the array should not increase.
+- Test 3d, a string is returned to note the airport is full.
 
 ## User story 4:
 As an air traffic controller
