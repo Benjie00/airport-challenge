@@ -22,6 +22,9 @@ class Airport {
   }
 
   takeOff(plane) {
+    if (!this.isPlaneInAirport(plane)) {
+      return;
+    }
     let indexOf = this.planesInAiport.indexOf(plane);
     this.planesInAiport.splice(indexOf, 1);
     return 'The plane has taken off';

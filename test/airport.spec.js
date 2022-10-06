@@ -2,7 +2,7 @@ const { assertEquals } = require("../testing-framework");
 const Airport = require('../src/airport')
 const Plane = require('../src/plane')
 
-let airport, plane;
+let airport, plane, plane1;
 
 //Test 1a - Is the plane instructed to land?
 console.log('===============')
@@ -241,3 +241,30 @@ result = undefined;
 
 ///////////////////////////////////////////
 
+//Test 5b: are planes that are not in the airport, prevented from taking off?
+console.log('===============')
+console.log('Test 5b: if the `takeOff()` method is called on a `plane` that is not included in `planesInAirport`, the length of the array will not change.')
+
+//arrange
+airport = new Airport();
+plane = new Plane();
+plane1 = new Plane();
+expected = 1;
+
+//act
+airport.landPlane(plane1)
+airport.takeOff(plane);
+actual = airport.planesInAiport.length;
+
+//assert
+result = assertEquals(actual, expected);
+console.log(`No planes left the airport: ${result}`)
+
+// Clean up 
+airport = null;
+plane = null;
+expected = undefined;
+actual = undefined;
+result = undefined;
+
+///////////////////////////////////////////
