@@ -70,8 +70,6 @@ I want to prevent asking the airport to let planes take-off which are not at the
 - **Test 5a**, the `isPlaneInAirport(plane)` method returns `true` if the `plane` is already present in the airport.
 - **Test 5b**, if the `takeOff()` method is called on a `plane` that is not included in `planesInAirport`, the length of the array will not change. 
 - **Test 5c**, a string should be returned to inform the user that the `plane` cannot takeoff if it is not in the airport when the `takeOff()` method is called. 
-- **Test 5d**, a plane is still removed from `planesInAirport[]` array if it was already there.
-- **Test 5e**, the `isPlaneInAirport(plane)` method returns `false` if the `plane` is not already present in the airport.
-- **Test 5f**, if the `landPlane()` method has been called on a plane already in the `planesInAirport[]` array, the **length** of the array should not increase.
-- **Test 5g**, a string will be returned to state a plane already in the airport cannot land.
-- **Test 5h**, a plane is still added to `planesInAirport[]` array if it was not already there.
+- **Test 5d**, the `isPlaneInAirport(plane)` method returns `false` if the `plane` is not already present in the airport.
+- **Test 5e**, if the `landPlane()` method has been called on a plane already in the `planesInAirport[]` array, the **length** of the array should not increase.
+- **Test fg**, a string will be returned to state a plane already in the airport cannot land.

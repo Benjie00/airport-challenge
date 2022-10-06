@@ -294,3 +294,30 @@ result = undefined;
 
 ///////////////////////////////////////////
 
+//Test 5d: does the isPlaneAtAirport() method detect a plane that is not in the aiport?
+console.log('===============')
+console.log('Test 5d: the isPlaneInAirport(plane) method returns false if the plane is not already present in the airport.')
+
+//arrange
+airport = new Airport();
+plane = new Plane();
+expected = false;
+
+//act
+actual = airport.isPlaneInAirport(plane)
+
+//assert
+result = assertEquals(actual, expected);
+console.log(`The plane was not already at the airport: ${result}`)
+
+// Clean up 
+airport = null;
+plane = null;
+expected = undefined;
+actual = undefined;
+result = undefined;
+
+///////////////////////////////////////////
+
+
+

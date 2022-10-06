@@ -34,6 +34,7 @@ class Airport {
     if (this.planesInAiport.includes(plane)) {
       return true;
     }
+    return false;
   }
 }
 
