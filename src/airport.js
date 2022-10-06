@@ -9,7 +9,6 @@ class Airport {
   }
 
   landPlane(plane) {
-
     if (this.planesInAiport.length === this.capacity) {
       return 'Airport is full, no more planes can land';
     }
@@ -26,6 +25,12 @@ class Airport {
     let indexOf = this.planesInAiport.indexOf(plane);
     this.planesInAiport.splice(indexOf, 1);
     return 'The plane has taken off';
+  }
+
+  isPlaneInAirport(plane) {
+    if (this.planesInAiport.includes(plane)) {
+      return true;
+    }
   }
 }
 

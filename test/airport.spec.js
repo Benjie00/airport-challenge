@@ -191,7 +191,7 @@ result = undefined;
 
 //Test 4b: when the plane takes off is a string returned?
 console.log('===============')
-console.log('Test 4: a string will be returned to confirm the plane has taken off.')
+console.log('Test 4b: a string will be returned to confirm the plane has taken off.')
 
 //arrange
 airport = new Airport();
@@ -214,3 +214,30 @@ actual = undefined;
 result = undefined;
 
 ///////////////////////////////////////////
+
+//Test 5a: is the plane in the airport?
+console.log('===============')
+console.log('Test 5a: does the isPlaneInAirport(plane) method returns true if the plane is already in the airport.')
+
+//arrange
+airport = new Airport();
+plane = new Plane();
+expected = true;
+
+//act
+airport.landPlane(plane)
+actual = airport.isPlaneInAirport(plane);
+
+//assert
+result = assertEquals(actual, expected);
+console.log(`The plane was already at the airprot: ${result}`)
+
+// Clean up 
+airport = null;
+plane = null;
+expected = undefined;
+actual = undefined;
+result = undefined;
+
+///////////////////////////////////////////
+

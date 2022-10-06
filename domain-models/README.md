@@ -53,16 +53,24 @@ I want to instruct the airport to let a plane take off and confirm that it is no
 
 - Test 4a, if 1 plane is stored at the airport and the `takeOff(plane)` method is called, the length of the `planesInAirport[]` array will decrease by 1. 
 - Test 4b, a string will be returned to confirm the plane has taken off.
-- Test 4c, the plane `id` will not be included in the `planesAtAirport[]` array.
+
 
 ## User story 5: 
 As an air traffic controller
 To avoid confusion
 I want to prevent asking the airport to let planes take-off which are not at the airport, or land a plane that's already landed 
 
-| **OBJECTS** | **PROPERTIES**               | **MESSAGES**       | **OUTPUTS** |
-| ----------- | ---------------------------- | ------------------ | ----------- |
-| airport     | planesInAirport@array[plane] | @landPlane[@plane] | @bool       |
-| airport     | planesInAirport@array[plane] | @takeOff[@plane]   | @bool       |
-| plane       | id@string                    | -                  | -           |
+| **OBJECTS** | **PROPERTIES**               | **MESSAGES**             | **OUTPUTS** |
+| ----------- | ---------------------------- | ------------------------ | ----------- |
+| airport     | planesInAirport@array[plane] | @landPlane[@plane]       | @string     |
+| airport     | planesInAirport@array[plane] | @takeOff[@plane]         | @string     |
+| airport     | -                            | isPlaneAtAirport(@plane) | @void       |
+| plane       | id@string                    | -                        | -           | - |
 
+- Test 5a, does the `isPlaneInAirport(plane)` method returns true if the `plane` is already present in the airport.
+- Test 5b, if the `takeOff()` method is called on a `plane` that is not included in `planesInAirport`, the length of the array will not change. 
+- Test 5c, a string should be returned to inform the user that the `plane` is not in the airport when the `takeOff()` method is called. 
+- Test 5d
+
+
+//Things to do, do i need to test the isplaneAtAirport if the 
