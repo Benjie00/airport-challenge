@@ -196,9 +196,7 @@ plane = new Plane();
 expected = 'Airport is full, no more planes can land';
 
 //act
-airport.landPlane(plane);
-airport.landPlane(plane);
-airport.landPlane(plane);
+airport.planesInAiport.length = airport.capacity;
 actual = airport.landPlane(plane)
 
 //assert
@@ -398,9 +396,9 @@ result = undefined;
 
 ///////////////////////////////////////////
 
-//Test 5g: is a string returned when a plane tries to land that is already at the airport?
+//Test 5f: is a string returned when a plane tries to land that is already at the airport?
 console.log('===============')
-console.log('Test 5g: a string will be returned to state a plane already in the airport cannot land again')
+console.log('Test 5f: a string will be returned to state a plane already in the airport cannot land again')
 
 //arrange
 airport = new Airport();
