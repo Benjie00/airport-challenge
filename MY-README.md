@@ -1,5 +1,20 @@
 # The Airport Challenge | 1st Challenge
 
+  - [About](#about)
+    - [Methodology](#methodology)
+  - [Getting Started](#getting-started)
+    - [Prerequisites:](#prerequisites)
+    - [Installation:](#installation)
+    - [Project Stucture:](#project-stucture)
+  - [Problem Statements](#problem-statements)
+    - [**User Story 1:**](#user-story-1)
+    - [**User Story 2:**](#user-story-2)
+    - [**User Story 3:**](#user-story-3)
+    - [**User Story 4:**](#user-story-4)
+    - [**User Story 5:**](#user-story-5)
+  - [Project Review](#project-review)
+    - [Main Takeaways:](#main-takeaways)
+    - [Future ideas:](#future-ideas)
 
 ## About
 **Date of completion: 09/10/2022**
@@ -142,6 +157,11 @@ I want to prevent asking the airport to let planes take-off which are not at the
 - Loosely couple classes.
 - Implement mock-variables.
 - Make more use of git for experimental ideas. 
+- Monitor ticket sales and passenger information, making sure flights are not over-booked and seats are assigned to specific passengers. Implelement this by making `Ticket` and `Passenger` classes. 
+- Expand the `Airport` class to support different locations by adding a `location` property.
+- Track flights and keep a log of flight history by adding a `FlightPlan` class and including a field to record which `Plane` was added to it.  
+- Improve flight saftey by only allowing flights to take off at certain times, allowing time intervals between each takeOff/landing. This could be done by inputting the information recorded by a flight/landing log into a new method that decides whether it is safe for another flight to take-off/land. 
+  
 
 
 
